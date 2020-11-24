@@ -36,3 +36,12 @@ Scenario Outline: Get times total
   | 5,3             | 15    |
 
 
+Scenario Outline: Get divide total
+  Given a <values> to Divide
+  When the calculator divide the values
+  Then the <total> of divide is correct
+
+  Examples: values
+  | values          | total |
+  | 15,3            | 5     |
+  | 15,2            | 7     |
