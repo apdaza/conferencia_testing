@@ -3,12 +3,14 @@ from calculadora import *
 
 @given('{base:d} y {exponente:d} para calcular la potencia')
 def step_implement(context, base, exponente):
-    pass
+    context.calculadora = Calculadora()
+    context.base = base
+    context.exponente = exponente
 
 @when('la calculadora realiza la potencia')
 def stem_implement(context):
-    pass
+    context.total = context.calculadora.elevar(context.base, context.exponente)
 
 @then('el {valor:d} es correcto')
 def step_implement(context, valor):
-    pass
+    assert (context.total == valor)
