@@ -39,3 +39,16 @@ def step_impl(context):
 @then('the {total:d} of multiply is correct')
 def step_impl(context, total):
     assert (context.total == total)
+
+@given('a {values} to Divide')
+def step_impl(context, values):
+    context.calculadora = Calculadora()
+    context.values = values.split(',')
+
+@when('the calculator divide the values')
+def step_impl(context):
+    context.total = context.calculadora.dividir(int(context.values[0]),int(context.values[1]))
+
+@then('the {total:d} of divide is correct')
+def step_impl(context, total):
+    assert (context.total == total)
