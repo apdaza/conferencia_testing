@@ -23,3 +23,7 @@ class TestCalculadora:
         calculadora = Calculadora()
         assert 2 == calculadora.dividir(14, 5)
 
+    def test_potencia(self):
+        calculadora = Calculadora()
+        assert  125 == calculadora.elevar(5, 3)
+
