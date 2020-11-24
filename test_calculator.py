@@ -19,3 +19,7 @@ class TestCalculadora:
         calculadora = Calculadora()
         assert 15 == calculadora.multiplicar(3, 5)
 
+    def test_division(self):
+        calculadora = Calculadora()
+        assert 2 == calculadora.dividir(14, 5)
+
