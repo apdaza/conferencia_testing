@@ -13,3 +13,6 @@ class Calculadora():
         if valor2 == 0:
             return "None"
         return valor1 // valor2
+
+    def elevar(self, base, exponente):
+        return base ** exponente
