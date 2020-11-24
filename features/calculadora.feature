@@ -45,3 +45,4 @@ Scenario Outline: Get divide total
   | values          | total |
   | 15,3            | 5     |
   | 15,2            | 7     |
+  | 14,0            | None  |
