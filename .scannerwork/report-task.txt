@@ -2,5 +2,5 @@ projectKey=my:project
 serverUrl=http://localhost:9000
 serverVersion=8.5.1.38104
 dashboardUrl=http://localhost:9000/dashboard?id=my%3Aproject
-ceTaskId=AXW9Ji_wNYAk2CaE1dd4
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXW9Ji_wNYAk2CaE1dd4
+ceTaskId=AXX3k54jOSVsRsjLe7bH
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXX3k54jOSVsRsjLe7bH
