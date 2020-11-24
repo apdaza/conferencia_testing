@@ -49,6 +49,9 @@ def step_impl(context, values):
 def step_impl(context):
     context.total = context.calculadora.dividir(int(context.values[0]),int(context.values[1]))
 
-@then('the {total:d} of divide is correct')
+@then('the {total} of divide is correct')
 def step_impl(context, total):
-    assert (context.total == total)
+    if total == "None":
+        assert(True)
+    else:
+        assert (context.total == int(total))
