@@ -27,3 +27,7 @@ class TestCalculadora:
         calculadora = Calculadora()
         assert  125 == calculadora.elevar(5, 3)
 
+    def test_concatenar(self):
+        calculadora = Calculadora()
+        assert "12" == calculadora.concatenar("1", "2")
+

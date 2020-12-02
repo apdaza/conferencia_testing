@@ -16,3 +16,6 @@ class Calculadora():
 
     def elevar(self, base, exponente):
         return base ** exponente
+
+    def concatenar(self, valor1, valor2):
+        return valor1 + valor2
