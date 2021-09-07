@@ -12,4 +12,5 @@ Feature: concatenar calculdora
         | numero1 | numero2 | valor |
         | 5    | 1         | 51     | 
         | 3    | 0         | 30     |
-        | 5    | 3         | 53   |
+        | 5    | 3         | 53     |
+        | 12   | 5         | 125    |
